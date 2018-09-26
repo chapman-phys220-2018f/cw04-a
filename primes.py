@@ -34,3 +34,13 @@ def gen_eratosthenes():
                 yield list_primes[index]
         count = 0
         next_prime += 1
+
+def eratosthenes_using_gen(n):
+    prime = gen_eratosthenes()
+    primes = []
+    prime_num = 0
+    for i in range (n):
+        prime_num = next(prime)
+        if (prime_num < n):
+            primes.append(prime_num)
+    return primes
