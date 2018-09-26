@@ -24,7 +24,7 @@ def gen_eratosthenes():
     yield list_primes[index]
     while (True):
         for i in range(2, next_prime):
-            if (next_prime %I != 0):
+            if (next_prime %i != 0):
                 count += 1
             else:
                 break
